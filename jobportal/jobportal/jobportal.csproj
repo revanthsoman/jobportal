@@ -75,11 +75,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="REG_COMPANY.aspx" />
     <Content Include="REG_USER.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REG_COMPANY.aspx.cs">
+      <DependentUpon>REG_COMPANY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="REG_COMPANY.aspx.designer.cs">
+      <DependentUpon>REG_COMPANY.aspx</DependentUpon>
+    </Compile>
     <Compile Include="REG_USER.aspx.cs">
       <DependentUpon>REG_USER.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

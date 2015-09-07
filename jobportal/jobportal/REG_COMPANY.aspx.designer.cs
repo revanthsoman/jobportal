@@ -10,7 +10,7 @@
 namespace jobportal {
     
     
-    public partial class REG_USER {
+    public partial class REG_COMPANY {
         
         /// <summary>
         /// form1 control.
@@ -22,76 +22,49 @@ namespace jobportal {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// txt_fname control.
+        /// txt_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_fname;
+        protected global::System.Web.UI.WebControls.TextBox txt_name;
         
         /// <summary>
-        /// txt_lname control.
+        /// rbtn_company_type control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_lname;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbtn_company_type;
         
         /// <summary>
-        /// txt_location control.
+        /// txt_type control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_location;
+        protected global::System.Web.UI.WebControls.TextBox txt_type;
         
         /// <summary>
-        /// txt_qualification control.
+        /// txt_description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_qualification;
+        protected global::System.Web.UI.WebControls.TextBox txt_description;
         
         /// <summary>
-        /// txt_industry control.
+        /// txt_address control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_industry;
-        
-        /// <summary>
-        /// txt_skills control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_skills;
-        
-        /// <summary>
-        /// txt_experience control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_experience;
-        
-        /// <summary>
-        /// txt_phone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_phone;
+        protected global::System.Web.UI.WebControls.TextBox txt_address;
         
         /// <summary>
         /// txt_mail control.
@@ -121,12 +94,12 @@ namespace jobportal {
         protected global::System.Web.UI.WebControls.TextBox txt_cpwd;
         
         /// <summary>
-        /// btn_ureg control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_ureg;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

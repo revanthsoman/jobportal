@@ -9,9 +9,6 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style2 {
-            width: 192px;
-        }
         .auto-style3 {
             width: 192px;
             height: 23px;
@@ -23,10 +20,7 @@
             height: 23px;
             width: 296px;
         }
-        .auto-style6 {
-            width: 296px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -48,26 +42,39 @@
                 <td class="auto-style4"></td>
             </tr>
             <tr>
-                <td class="auto-style2">Date of Birth :</td>
-                <td class="auto-style6">
-                    <asp:Calendar ID="cal_dob" runat="server"></asp:Calendar>
+                <td class="auto-style3">Current Location :</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txt_location" runat="server"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">Qualification :</td>
                 <td class="auto-style5">
-                    <asp:DropDownList ID="ddl_qualification" runat="server">
-                    </asp:DropDownList>
+                    <asp:TextBox ID="txt_qualification" runat="server"></asp:TextBox>
                 </td>
                 <td class="auto-style4"></td>
             </tr>
             <tr>
-                <td class="auto-style3">Address :</td>
+                <td class="auto-style3">Industry :</td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="txt_addrs" runat="server" TextMode="MultiLine"></asp:TextBox>
+                    <asp:TextBox ID="txt_industry" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Skills</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txt_skills" runat="server" TextMode="MultiLine"></asp:TextBox>
                 </td>
                 <td class="auto-style4"></td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Experience :</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txt_experience" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">Phone :</td>
@@ -80,13 +87,6 @@
                 <td class="auto-style3">E-mail :</td>
                 <td class="auto-style5">
                     <asp:TextBox ID="txt_mail" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style4">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">Username :</td>
-                <td class="auto-style5">
-                    <asp:TextBox ID="txt_usrname" runat="server"></asp:TextBox>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
             </tr>
