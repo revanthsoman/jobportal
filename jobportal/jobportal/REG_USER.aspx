@@ -1,29 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="REG_USER.aspx.cs" Inherits="jobportal.REG_USER" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="REG_USER.aspx.cs" Inherits="jobportal.REG_USER" MasterPageFile="~/jobportal.Master" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style3 {
-            width: 192px;
-            height: 23px;
-        }
-        .auto-style4 {
-            height: 23px;
-        }
-        .auto-style5 {
-            height: 23px;
-            width: 296px;
-        }
-        </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" runat="server" contentplaceholderid="ContentPlaceHolder1">
+    <header class="major">
+        <h2>&nbsp;Register Here</h2>
+    </header>
+</asp:Content>
+<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
+    <form id="form1">
     <div>
     
         <table class="auto-style1">
@@ -115,5 +99,7 @@
     
     </div>
     </form>
-</body>
-</html>
+</asp:Content>
+
+
+

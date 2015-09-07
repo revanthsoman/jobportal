@@ -13,15 +13,6 @@ namespace jobportal {
     public partial class REG_COMPANY {
         
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
         /// txt_name control.
         /// </summary>
         /// <remarks>
@@ -94,12 +85,12 @@ namespace jobportal {
         protected global::System.Web.UI.WebControls.TextBox txt_cpwd;
         
         /// <summary>
-        /// Button1 control.
+        /// btn_creg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btn_creg;
     }
 }

@@ -1,53 +1,21 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="REG_COMPANY.aspx.cs" Inherits="jobportal.REG_COMPANY" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="REG_COMPANY.aspx.cs" Inherits="jobportal.REG_COMPANY" MasterPageFile="~/jobportal.Master"%>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 171px;
-        }
-        .auto-style3 {
-            width: 171px;
-            height: 23px;
-        }
-        .auto-style4 {
-            height: 23px;
-        }
-        .auto-style5 {
-            width: 250px;
-        }
-        .auto-style6 {
-            height: 23px;
-            width: 250px;
-        }
-        .auto-style7 {
-            width: 171px;
-            height: 30px;
-        }
-        .auto-style8 {
-            width: 250px;
-            height: 30px;
-        }
-        .auto-style9 {
-            height: 30px;
-        }
-    </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" runat="server" contentplaceholderid="ContentPlaceHolder1">
+    <header class="major">
+        <h2>Register Here</h2>
+    </header>
+</asp:Content>
+<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
+    <form id="form1">
     <div>
     
         <table class="auto-style1">
             <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style2" style="height: 26px"></td>
+                <td class="auto-style5" style="height: 26px">
+                </td>
+                <td style="height: 26px"></td>
             </tr>
             <tr>
                 <td class="auto-style2">Company Name :</td>
@@ -57,14 +25,14 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">Company Type :</td>
-                <td class="auto-style5">
+                <td class="auto-style2" style="height: 26px">Company Type :</td>
+                <td class="auto-style5" style="height: 26px">
                     <asp:RadioButtonList ID="rbtn_company_type" runat="server" RepeatDirection="Horizontal">
                         <asp:ListItem Selected="True">Company</asp:ListItem>
                         <asp:ListItem>Consultant</asp:ListItem>
                     </asp:RadioButtonList>
                 </td>
-                <td>&nbsp;</td>
+                <td style="height: 26px"></td>
             </tr>
             <tr>
                 <td class="auto-style3">Industry :</td>
@@ -129,5 +97,7 @@
     
     </div>
     </form>
-</body>
-</html>
+</asp:Content>
+
+
+
