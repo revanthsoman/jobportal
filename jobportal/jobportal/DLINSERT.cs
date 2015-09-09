@@ -89,10 +89,44 @@ namespace jobportal
             cmd.Connection = Opencon();
             cmd.CommandType = CommandType.StoredProcedure;
 
+            cmd.Parameters.AddWithValue("@cname", obj.Cname);
+            cmd.Parameters.AddWithValue("@type", obj.Type);
+            cmd.Parameters.AddWithValue("@indus", obj.Industry);
+            cmd.Parameters.AddWithValue("@desc", obj.Description);
+            cmd.Parameters.AddWithValue("@addrs", obj.Address);
+            cmd.Parameters.AddWithValue("@phn", obj.Phone);
+            cmd.Parameters.AddWithValue("@email", obj.Email);
+            cmd.Parameters.AddWithValue("@pwd", obj.Password);
+
+            cmd.CommandText = "PROC_REG_COMPANY";
+
+            SqlParameter param = new SqlParameter();
+            param.ParameterName = "@rid";
+            cmd.Parameters.Add("@rid", DbType.Int32);
+            cmd.Parameters["@rid"].Direction = ParameterDirection.Output;
+            cmd.ExecuteNonQuery();
+            int r = Convert.ToInt32(cmd.Parameters["@rid"].Value);
+            Closecon();
 
 
 
-            return 0;
+
+            cmd1.Connection = Opencon();
+            cmd1.CommandType = CommandType.StoredProcedure;
+
+
+            cmd1.Parameters.AddWithValue("@rid", r);
+            cmd1.Parameters.AddWithValue("@email", obj.Email);
+            cmd1.Parameters.AddWithValue("@pwd", obj.Password);
+
+            cmd1.CommandText = "PROC_LOGIN_COMPANY";
+
+
+            int i = cmd1.ExecuteNonQuery();
+            Closecon();
+            return i;
+
+
         }
 
     }

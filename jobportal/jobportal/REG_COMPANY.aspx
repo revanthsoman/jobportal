@@ -65,21 +65,21 @@
             <tr>
                 <td class="auto-style2">E-mail</td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="txt_mail" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_mail" runat="server" TextMode="Email"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">Password :</td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="txt_pwd" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_pwd" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">Confirm Password :</td>
                 <td class="auto-style6">
-                    <asp:TextBox ID="txt_cpwd" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_cpwd" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td class="auto-style4"></td>
             </tr>
