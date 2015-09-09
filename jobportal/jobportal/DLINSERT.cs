@@ -90,7 +90,7 @@ namespace jobportal
             cmd.CommandType = CommandType.StoredProcedure;
 
 
-
+            return 0;
 
             return 0;
         }
