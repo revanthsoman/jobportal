@@ -13,13 +13,13 @@ namespace jobportal {
     public partial class REG_COMPANY {
         
         /// <summary>
-        /// txt_name control.
+        /// txt_cname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_name;
+        protected global::System.Web.UI.WebControls.TextBox txt_cname;
         
         /// <summary>
         /// rbtn_company_type control.
@@ -31,13 +31,13 @@ namespace jobportal {
         protected global::System.Web.UI.WebControls.RadioButtonList rbtn_company_type;
         
         /// <summary>
-        /// txt_type control.
+        /// txt_industry control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_type;
+        protected global::System.Web.UI.WebControls.TextBox txt_industry;
         
         /// <summary>
         /// txt_description control.
@@ -56,6 +56,15 @@ namespace jobportal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_address;
+        
+        /// <summary>
+        /// txt_phone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_phone;
         
         /// <summary>
         /// txt_mail control.

@@ -7,7 +7,7 @@
     </header>
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
-    <form id="form1">
+   
     <div>
     
         <table class="auto-style1">
@@ -70,35 +70,35 @@
             <tr>
                 <td class="auto-style3">E-mail :</td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="txt_mail" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_mail" runat="server" TextMode="Email"></asp:TextBox>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">Password :</td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="txt_pwd" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_pwd" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">Confirm Password :</td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="txt_cpwd" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_cpwd" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style5">
-                    <asp:Button ID="btn_ureg" runat="server" Text="REGISTER" />
+                    <asp:Button ID="btn_ureg" runat="server" Text="REGISTER" OnClick="btn_ureg_Click" />
                 </td>
                 <td class="auto-style4">&nbsp;</td>
             </tr>
         </table>
     
     </div>
-    </form>
+   
 </asp:Content>
 
 

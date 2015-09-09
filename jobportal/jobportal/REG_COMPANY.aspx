@@ -7,7 +7,7 @@
     </header>
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
-    <form id="form1">
+   
     <div>
     
         <table class="auto-style1">
@@ -18,11 +18,11 @@
                 <td style="height: 26px"></td>
             </tr>
             <tr>
-                <td class="auto-style2">Company Name :</td>
-                <td class="auto-style5">
-                    <asp:TextBox ID="txt_name" runat="server"></asp:TextBox>
+                <td class="auto-style2" style="height: 26px">Company Name :</td>
+                <td class="auto-style5" style="height: 26px">
+                    <asp:TextBox ID="txt_cname" runat="server"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td style="height: 26px"></td>
             </tr>
             <tr>
                 <td class="auto-style2" style="height: 26px">Company Type :</td>
@@ -37,7 +37,7 @@
             <tr>
                 <td class="auto-style3">Industry :</td>
                 <td class="auto-style6">
-                    <asp:TextBox ID="txt_type" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_industry" runat="server"></asp:TextBox>
                 </td>
                 <td class="auto-style4"></td>
             </tr>
@@ -52,6 +52,13 @@
                 <td class="auto-style2">Address :</td>
                 <td class="auto-style5">
                     <asp:TextBox ID="txt_address" runat="server" TextMode="MultiLine"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">Phone :</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txt_phone" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -79,7 +86,7 @@
             <tr>
                 <td class="auto-style7"></td>
                 <td class="auto-style8">
-                    <asp:Button ID="btn_creg" runat="server" Text="REGISTER" />
+                    <asp:Button ID="btn_creg" runat="server" Text="REGISTER" OnClick="btn_creg_Click" />
                 </td>
                 <td class="auto-style9"></td>
             </tr>
@@ -96,7 +103,7 @@
         </table>
     
     </div>
-    </form>
+   
 </asp:Content>
 
 
