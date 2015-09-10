@@ -27,7 +27,7 @@
 				<div class="container">
 						
 					<!-- Logo -->
-						<h2><a href="#" id="logo">Online Job Portal</a></h2>
+						<h1 style="font-size:225%"><a href="#" id="logo">Online Job Portal</a></h1>
 					
 					<!-- Nav -->
 						<nav id="nav">
@@ -52,9 +52,8 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="LOGIN_USER.aspx">User Login</a></li>
+								<li><a href="LOGIN_COMPANY.aspx">Employer Login</a></li>
 							</ul>
 						</nav>
 

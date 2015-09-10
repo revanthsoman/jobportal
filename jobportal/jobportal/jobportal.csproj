@@ -66,9 +66,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="COMPANY.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="index.html" />
     <Content Include="left-sidebar.html" />
+    <Content Include="LOGIN_COMPANY.aspx" />
+    <Content Include="LOGIN_USER.aspx" />
     <Content Include="no-sidebar.html" />
     <Content Include="packages.config" />
     <Content Include="jobportal.Master" />
@@ -83,10 +86,18 @@
     <Content Include="REG_COMPANY.aspx" />
     <Content Include="REG_USER.aspx" />
     <Content Include="right-sidebar.html" />
+    <Content Include="USER.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLINSERT.cs" />
+    <Compile Include="COMPANY.aspx.cs">
+      <DependentUpon>COMPANY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COMPANY.aspx.designer.cs">
+      <DependentUpon>COMPANY.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DLINSERT.cs" />
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -102,6 +113,20 @@
     <Compile Include="jobportal.Master.designer.cs">
       <DependentUpon>jobportal.Master</DependentUpon>
     </Compile>
+    <Compile Include="LOGIN_COMPANY.aspx.cs">
+      <DependentUpon>LOGIN_COMPANY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOGIN_COMPANY.aspx.designer.cs">
+      <DependentUpon>LOGIN_COMPANY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_USER.aspx.cs">
+      <DependentUpon>LOGIN_USER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOGIN_USER.aspx.designer.cs">
+      <DependentUpon>LOGIN_USER.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="REG_COMPANY.aspx.cs">
       <DependentUpon>REG_COMPANY.aspx</DependentUpon>
@@ -116,6 +141,13 @@
     </Compile>
     <Compile Include="REG_USER.aspx.designer.cs">
       <DependentUpon>REG_USER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER.aspx.cs">
+      <DependentUpon>USER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER.aspx.designer.cs">
+      <DependentUpon>USER.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

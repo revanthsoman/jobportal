@@ -13,6 +13,7 @@ namespace jobportal
 
         string fname,lname,loc,qual,indus,skill, phone,email, pwd;
         String cname, type, desc, addrs;
+        String susr,srid;
         int exp;
        
         //USER REGISTRATION
@@ -112,6 +113,36 @@ namespace jobportal
         {
             int i = dl.DL_CReg(this);
             return i;
+        }
+
+
+
+       public int BL_ULogin(BLINSERT obj)
+        {
+            int i = dl.DL_ULogin(this);
+            return i;
+        }
+
+        public int BL_CLogin(BLINSERT obj)
+        {
+            int i = dl.DL_CLogin(this);
+            return i;
+        }
+
+
+
+        public String Sess_User
+        {
+            set { susr = value; }
+            get { return susr; }
+
+        }
+
+        public String Sess_Rid
+        {
+            set { srid = value; }
+            get { return srid; }
+
         }
     }
 }

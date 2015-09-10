@@ -126,8 +126,68 @@ namespace jobportal
             Closecon();
             return i;
 
+        }
+
+
+        public int DL_ULogin(BLINSERT obj)
+        {
+            cmd.Connection = Opencon();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@email", obj.Email);
+            cmd.Parameters.AddWithValue("@pwd", obj.Password);
+
+            cmd.CommandText = "USER_LOGIN";
+
+            SqlDataAdapter dr = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            dr.Fill(dt);
+
+            if (dt.Rows.Count == 1)
+            {
+                obj.Sess_Rid = dt.Rows[0][1].ToString();
+                obj.Sess_User = dt.Rows[0][0].ToString();
+
+                return 1;
+
+            }
+            else
+            {
+                return 0;
+            }
 
         }
 
+
+        public int DL_CLogin(BLINSERT obj)
+        {
+            cmd.Connection = Opencon();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@email", obj.Email);
+            cmd.Parameters.AddWithValue("@pwd", obj.Password);
+
+            cmd.CommandText = "COMPANY_LOGIN";
+
+            SqlDataAdapter dr = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            dr.Fill(dt);
+
+            if (dt.Rows.Count == 1)
+            {
+                obj.Sess_Rid = dt.Rows[0][0].ToString();
+                obj.Sess_User = dt.Rows[0][0].ToString();
+
+                return 1;
+
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
+
+
+
     }
-    }
+}
+    
