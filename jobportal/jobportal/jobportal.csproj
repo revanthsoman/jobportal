@@ -69,12 +69,14 @@
     <Content Include="COMPANY.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="index.html" />
+    <Content Include="JOBOPENINGS.aspx" />
     <Content Include="left-sidebar.html" />
     <Content Include="LOGIN_COMPANY.aspx" />
     <Content Include="LOGIN_USER.aspx" />
     <Content Include="no-sidebar.html" />
     <Content Include="packages.config" />
     <Content Include="jobportal.Master" />
+    <Content Include="WebForm1.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -83,6 +85,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="POSTJOBS.aspx" />
     <Content Include="REG_COMPANY.aspx" />
     <Content Include="REG_USER.aspx" />
     <Content Include="right-sidebar.html" />
@@ -106,6 +109,13 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="JOBOPENINGS.aspx.cs">
+      <DependentUpon>JOBOPENINGS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JOBOPENINGS.aspx.designer.cs">
+      <DependentUpon>JOBOPENINGS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="jobportal.Master.cs">
       <DependentUpon>jobportal.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -126,6 +136,13 @@
     </Compile>
     <Compile Include="LOGIN_USER.aspx.designer.cs">
       <DependentUpon>LOGIN_USER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POSTJOBS.aspx.cs">
+      <DependentUpon>POSTJOBS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POSTJOBS.aspx.designer.cs">
+      <DependentUpon>POSTJOBS.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="REG_COMPANY.aspx.cs">
@@ -148,6 +165,13 @@
     </Compile>
     <Compile Include="USER.aspx.designer.cs">
       <DependentUpon>USER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

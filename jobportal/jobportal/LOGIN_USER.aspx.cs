@@ -23,9 +23,10 @@ namespace jobportal
             int i = b3.BL_ULogin(b3);
             if (i == 1)
             {
-                Response.Redirect("~/USER.aspx");
+               
                 Session["user"] = b3.Sess_User;
                 Session["rid"] = b3.Sess_Rid;
+                Response.Redirect("~/USER.aspx");
             }
             else
             {

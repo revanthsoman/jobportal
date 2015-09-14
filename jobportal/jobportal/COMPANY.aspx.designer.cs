@@ -13,12 +13,30 @@ namespace jobportal {
     public partial class COMPANY {
         
         /// <summary>
-        /// lbl_user control.
+        /// lbl_company control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_user;
+        protected global::System.Web.UI.WebControls.Label lbl_company;
+        
+        /// <summary>
+        /// linkbtn_logout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton linkbtn_logout;
+        
+        /// <summary>
+        /// btn_postjob control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_postjob;
     }
 }

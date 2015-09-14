@@ -14,7 +14,11 @@ namespace jobportal
         string fname,lname,loc,qual,indus,skill, phone,email, pwd;
         String cname, type, desc, addrs;
         String susr,srid;
+        String title, sal,date;
         int exp;
+        int hours;
+        DataList dl_id;
+
        
         //USER REGISTRATION
         public string Fname
@@ -115,7 +119,7 @@ namespace jobportal
             return i;
         }
 
-
+        //login
 
        public int BL_ULogin(BLINSERT obj)
         {
@@ -130,7 +134,7 @@ namespace jobportal
         }
 
 
-
+        //session
         public String Sess_User
         {
             set { susr = value; }
@@ -143,6 +147,58 @@ namespace jobportal
             set { srid = value; }
             get { return srid; }
 
+        }
+
+
+        //job posting
+
+        public String Title
+        {
+            set { title = value; }
+            get { return title; }
+
+        }
+
+        public int Work_Hours
+        {
+            set { hours = value; }
+            get { return hours; }
+
+        }
+
+        public String Salary
+        {
+            set { sal = value; }
+            get { return sal; }
+
+        }
+
+        public string Close_Date
+        {
+            set { date = value; }
+            get { return date; }
+
+        }
+
+        public int BL_Post_Job(BLINSERT obj)
+        {
+            int i = dl.DL_Post_Job(this);
+            return i;
+        }
+
+
+        //job openings
+
+        public DataList DL_Id
+        {
+            set { dl_id = value; }
+            get { return dl_id; }
+
+        }
+
+        public void BL_Show_DataList(BLINSERT obj)
+        {
+            dl.DL_Show_DataList(this);
         }
     }
 }

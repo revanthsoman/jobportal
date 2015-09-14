@@ -137,11 +137,40 @@ namespace jobportal
             cmd.Parameters.AddWithValue("@pwd", obj.Password);
 
             cmd.CommandText = "USER_LOGIN";
+            
+            SqlDataAdapter dr = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            dr.Fill(dt);
+            Closecon();
+            if (dt.Rows.Count == 1)
+            {
+                obj.Sess_Rid = dt.Rows[0][1].ToString();
+                obj.Sess_User = dt.Rows[0][0].ToString();
+
+                return 1;
+
+            }
+            else
+            {
+                return 0;
+            }
+            
+        }
+
+
+        public int DL_CLogin(BLINSERT obj)
+        {
+            cmd.Connection = Opencon();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@email", obj.Email);
+            cmd.Parameters.AddWithValue("@pwd", obj.Password);
+
+            cmd.CommandText = "COMPANY_LOGIN";
 
             SqlDataAdapter dr = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             dr.Fill(dt);
-
+            Closecon();
             if (dt.Rows.Count == 1)
             {
                 obj.Sess_Rid = dt.Rows[0][1].ToString();
@@ -158,35 +187,46 @@ namespace jobportal
         }
 
 
-        public int DL_CLogin(BLINSERT obj)
+        public int DL_Post_Job(BLINSERT obj)
         {
             cmd.Connection = Opencon();
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@email", obj.Email);
-            cmd.Parameters.AddWithValue("@pwd", obj.Password);
 
-            cmd.CommandText = "COMPANY_LOGIN";
+            cmd.Parameters.AddWithValue("@title", obj.Title);
+            cmd.Parameters.AddWithValue("@type", obj.Type);
+            cmd.Parameters.AddWithValue("@loc", obj.Location);
+            cmd.Parameters.AddWithValue("@desc", obj.Description);
+            cmd.Parameters.AddWithValue("@qual", obj.Qualification);
+            cmd.Parameters.AddWithValue("@hrs", obj.Work_Hours);
+            cmd.Parameters.AddWithValue("@sal", obj.Salary);
+            cmd.Parameters.AddWithValue("@date", obj.Close_Date);
+            cmd.Parameters.AddWithValue("@company", obj.Cname);
+
+            cmd.CommandText = "PROC_POST_JOB";
+
+            int i = cmd.ExecuteNonQuery();
+            Closecon();
+            return i;
+
+        }
+
+        public void DL_Show_DataList(BLINSERT obj)
+        {
+            cmd.Connection = Opencon();
+            cmd.CommandType = CommandType.StoredProcedure;
+
+
+            cmd.CommandText = "PROC_JOB_OPENING";
 
             SqlDataAdapter dr = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             dr.Fill(dt);
+            Closecon();
 
-            if (dt.Rows.Count == 1)
-            {
-                obj.Sess_Rid = dt.Rows[0][0].ToString();
-                obj.Sess_User = dt.Rows[0][0].ToString();
-
-                return 1;
-
-            }
-            else
-            {
-                return 0;
-            }
+            obj.DL_Id.DataSource = dt;
+            obj.DL_Id.DataBind();
 
         }
-
-
 
     }
 }

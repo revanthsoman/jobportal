@@ -33,8 +33,9 @@ namespace jobportal
             int i = bl.BL_UReg(bl);
             if (i == 1)
             {
+              
                 Response.Write("<script>alert('Registration Successful')</script>");
-
+                Server.Transfer("~/HOME.aspx");
             }
             else
             {

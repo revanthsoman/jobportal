@@ -31,11 +31,12 @@ namespace jobportal
             if (i == 1)
             {
                 Response.Write("<script>alert('Registration Successful')</script>");
-
+                Server.Transfer("~/HOME.aspx");
             }
             else
             {
                 Response.Write("<script>alert('Registration Failed')</script>");
+               
             }
         }
     }

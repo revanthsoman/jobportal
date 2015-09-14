@@ -52,8 +52,18 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
-								<li><a href="LOGIN_USER.aspx">User Login</a></li>
-								<li><a href="LOGIN_COMPANY.aspx">Employer Login</a></li>
+								<li>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                                        <p>
+                                            <a href="LOGIN_USER.aspx">User Login</a></p>
+                                    </asp:ContentPlaceHolder>
+                                </li>
+								<li>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                                        <p>
+                                            <a href="LOGIN_COMPANY.aspx">Employer Login</a></p>
+                                    </asp:ContentPlaceHolder>
+                                </li>
 							</ul>
 						</nav>
 
